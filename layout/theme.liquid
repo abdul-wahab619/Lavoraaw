@@ -310,6 +310,13 @@
     {% sections 'header-group' %}
 
     <h3>Hello from the header group section</h3>
+    <pre>
+      {% if request.design_mode %}
+        THIS IS DESIGN MODE
+      {% else %}
+        THIS IS NOT DESIGN MODE
+      {% endif %}
+    </pre>
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
